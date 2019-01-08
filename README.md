@@ -1,5 +1,5 @@
 # Bitrix24Parser
-Birtri24Parser - easiest way to parse webhook data from Bitrix24
+Birtri24Parser - easiest way to parse webhook data from Bitrix24 and form outcoming payload
 
 ## How to use
 1. Require necessary method from parser.js
