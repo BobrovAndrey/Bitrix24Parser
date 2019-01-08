@@ -30,13 +30,13 @@ const {data, payload, embeds} = require('parser')
   * applicationToken - application token
 
   ```
-  let incomingbitrixDomain = data(webhookData).bitrixDomain
-  let incomingmemberId = data(webhookData).memberId
+  let incomingBitrixDomain = data(webhookData).bitrixDomain
+  let incomingMemberId = data(webhookData).memberId
 
   ```
 
 ## "payload" method
-  "Payload" will form valid payload from params, that you pass to it
+  "Payload" will form valid payload form from params, that you pass to it
   
   ```
   parser.payload(name, channelId, token, avatar, guildId, id, content) {
@@ -54,7 +54,7 @@ const {data, payload, embeds} = require('parser')
   ! "Content" field must contain message. 
 
 ## "embeds" method
-  "Embeds" will form valid embed form params, that you pass to it
+  "Embeds" will form valid embed form form params, that you pass to it
 
   ```
   parser.embeds = function (title, url, name) {
