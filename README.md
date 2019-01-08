@@ -36,6 +36,7 @@ const {data, payload, embeds} = require('bitrix24Parser')
   let incomingMemberId = data(webhookData).memberId
 
   ```
+  ! "data" will throw pare errors to you
 
 ## "payload" method
   "Payload" will form valid payload form from params, that you pass to it
