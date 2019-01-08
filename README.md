@@ -1,37 +1,33 @@
 # Bitrix24Parser
 Birtri24Parser - easiest way to parse webhook data from Bitrix24
 
-## how to use
+## How to use
 1. Require necessary method from parser.js
 2. Set incoming data from bitrix24 webhook as variable
 3. Select on of available methods from "parser" object and call it with bitrix24 webhook data as function params
 
-#### sample
+#### Discord webhook usage example
  ```
 const {data, payload, embeds} = require('parser')
 
   let const webhookData
 
   let incomingLeadId = data(webhookData).leadId
-
-/*
-const parser = require ('parser') 
-if you do so, call parser.data, parser.payload, parser.embads instead
-*/
+  let payload = parser.payload('Name', 'channel_id', 'token', 'avatar', 'guild_id', 'id', `Text message`)
+  let payload = parser.embeds(`Message text`, URL, Bitrix Domain)
  ```
 
 ## "data" method 
 
-  Contains webhook data parts
+  Contains webhook data parts.
 
-
-  leadId  - webhook lead ID number
-  bitrixDomain - webhook bitrix domain informtion
-  ts - webhook timestamp
-  clientEndpoint - webhook client endpoint
-  serverEndpoint -  webhook server endpoint
-  memberId - webhook member ID
-  applicationToken - application token
+  * leadId  - webhook lead ID number
+  * bitrixDomain - webhook bitrix domain informtion
+  * ts - webhook timestamp
+  * clientEndpoint - webhook client endpoint
+  * serverEndpoint -  webhook server endpoint
+  * memberId - webhook member ID
+  * applicationToken - application token
 
   ```
   let incomingbitrixDomain = data(webhookData).bitrixDomain
@@ -43,7 +39,7 @@ if you do so, call parser.data, parser.payload, parser.embads instead
   "Payload" will form valid payload from params, that you pass to it
   
   ```
-  let payload = parser.payload(name, channelId, token, avatar, guildId, id, content) {
+  parser.payload(name, channelId, token, avatar, guildId, id, content) {
   return {
     'name': name,
     'channel_id': channelId, 
