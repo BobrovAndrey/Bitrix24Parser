@@ -2,9 +2,13 @@
 Birtri24Parser - easiest way to parse webhook data from Bitrix24 and form outcoming payload
 
 ## How to use
-1. Require necessary method from bitrix24Parser.js
-2. Set incoming data from Bitrix24 webhook as variable
-3. Select on of available methods from "parser" object and call it with bitrix24 webhook data as function params
+1. Clone or download
+2. Install latest version of node.js  
+[node.js](https://nodejs.org/en/)
+3. ```npm i got``` from your terminal in directory with Birtri24Parser
+4. Require necessary method from bitrix24Parser.js
+5. Set incoming data from Bitrix24 webhook as variable
+6. Select on of available methods from "parser" object and call it with bitrix24 webhook data as function params
 
 #### Discord webhook usage example
  ```
