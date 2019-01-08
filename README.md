@@ -8,7 +8,7 @@ Birtri24Parser - easiest way to parse webhook data from Bitrix24 and form outcom
 
 #### Discord webhook usage example
  ```
-const {data, payload, embeds} = require('parser')
+const {data, payload, embeds} = require('bitrix24Parser')
 
   let const webhookData
 
